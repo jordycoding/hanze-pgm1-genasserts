@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Hanze Programming 1 Automatic assert generator",
+    "version": "1.0",
+
+    "description": "Automatically generate python assert statements for Programming 1",
+
+    "content_scripts": [
+        {
+            "matches": ["*://blackboard.hanze.nl/bbcswebdav/*"],
+            "js": ["genAssert.js"]
+        }
+    ]
+}
